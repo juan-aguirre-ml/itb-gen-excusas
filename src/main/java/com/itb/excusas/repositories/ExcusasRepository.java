@@ -20,7 +20,7 @@ public class ExcusasRepository implements ExcusasRepo{
     @Override
     public int addExcusa(ExcusaDTO excusa) {
         this.idCounter++;
-
+        excusa.setExcusaId(this.idCounter);
         excusas.put(this.idCounter,excusa);
         return this.idCounter;
     }

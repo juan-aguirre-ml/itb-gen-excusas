@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ExcusaDTO {
+    private int excusaId;
     private String mensaje;
     private int usos;
 }
