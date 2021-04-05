@@ -12,7 +12,7 @@ public class ExcusasRepository  implements ExcusasRepo{
 
 
     public ExcusaDTO getExcusaById(int idExcusa){
-
+        return excusas.getOrDefault(idExcusa, null);
     }
 
 
